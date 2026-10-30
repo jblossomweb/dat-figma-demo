@@ -4,6 +4,8 @@
 
 <!-- e.g. Node version, any global tools needed. Delete this section if none. -->
 
+- Node.js v24.20.0
+
 ## How to run locally
 
 <!-- Exact steps, in order, from a fresh clone to viewing the page in a
