@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "links": [
+      { "label": "Products", "href": "#", "hasMenu": true },
+      { "label": "Solutions", "href": "#", "hasMenu": true, "current": true },
+      { "label": "Resources", "href": "#", "hasMenu": true },
+      { "label": "Contact", "href": "#", "hasMenu": false }
+    ],
+    "actions": [
+      { "label": "Login", "href": "#", "variant": "outline" },
+      { "label": "Sign up", "href": "#", "variant": "primary" }
+    ]
+  },
+  "hero": {
+    "heading": "Solutions for Freight Brokers",
+    "subheading": "Whether you are just starting your brokerage or an industry expert, DAT solutions take your company to the next level with tools to price freight more efficiently and win new business with the largest carrier network in North America.",
+    "callout": {
+      "heading": "Need your authority?",
+      "text": "You’re in the right place.",
+      "cta": {
+        "label": "Get started",
+        "href": "#get-authority"
+      }
+    }
+  },
+  "features": {
+    "heading": "Broker freight with confidence",
+    "items": [
+      {
+        "title": "Move Freight",
+        "description": "Get access to the largest carrier network in North America, plus the tools to book, qualify and onboard in minutes."
+      },
+      {
+        "title": "Optimize Your Business",
+        "description": "Take the uncertainty out of freight with the deepest, broadest, and most reliable rate and capacity analytics."
+      },
+      {
+        "title": "Get on the routing guide",
+        "description": "We provide the most accurate freight rate predictive models so that you can bid on freight with confidence and win business that boosts your bottom line."
+      }
+    ]
+  },
+  "spotlights": [
+    {
+      "title": "Load Board and Beyond",
+      "description": "Move more freight with access to over 1.6 million trucks on the DAT One Load Board network, plus tools to maximize your private network of carriers.",
+      "benefits": [
+        "Expand your reach",
+        "Automated booking / negotiation tools",
+        "Qualify Carriers Rapidly"
+      ],
+      "mediaPosition": "right"
+    },
+    {
+      "title": "Market Insights",
+      "description": "DAT iQ can help you quote customers instantly with the most up-to-date market rates on every lane for any trailer.",
+      "benefits": [
+        "Compare spot and contract rates",
+        "Protect your margins",
+        "Research new lanes"
+      ],
+      "mediaPosition": "left"
+    }
+  ],
+  "authorityForm": {
+    "id": "get-authority",
+    "heading": "Get Your Authority",
+    "fields": [
+      { "name": "firstName", "label": "First Name", "type": "text", "required": true },
+      { "name": "lastName", "label": "Last Name", "type": "text", "required": true },
+      { "name": "email", "label": "Email", "type": "email", "required": true },
+      { "name": "phone", "label": "Phone", "type": "tel", "required": true },
+      { "name": "companyName", "label": "Company Name", "type": "text", "required": true },
+      { "name": "companyType", "label": "Company Type", "type": "select", "required": false },
+      { "name": "state", "label": "State", "type": "select", "required": false },
+      { "name": "transportationRole", "label": "Transportation Role", "type": "select", "required": false }
+    ],
+    "authorityNeeded": {
+      "legend": "Authority Needed?",
+      "options": ["Trucker", "Broker", "Other"]
+    },
+    "consent": "By submitting this form, you permit us to send you emails, SMS and/or call communications.",
+    "submitLabel": "Submit"
+  },
+  "cta": {
+    "heading": "Get started today",
+    "text": "Talk to our team about getting started with the industry standard in transportation analytics",
+    "actions": [
+      { "label": "Learn more", "href": "#", "variant": "ghost" },
+      { "label": "Request a demo", "href": "#", "variant": "primary" }
+    ]
+  },
+  "footer": {
+    "columns": [
+      {
+        "heading": "Company",
+        "links": ["Leadership", "History", "Careers", "News & Events", "Partner with Us"]
+      },
+      {
+        "heading": "Products",
+        "links": ["Load Board", "RateView Analytics", "DAT iQ Benchmark", "Operating Authority", "Product Reviews", "DAT Outgo"]
+      },
+      {
+        "heading": "Resources",
+        "links": ["FAQs", "Blog", "Press Room", "Guides", "Videos"]
+      },
+      {
+        "heading": "Support",
+        "links": ["Product login", "Fraud Protection", "Support Request", "Contact Us"]
+      }
+    ],
+    "social": ["Facebook", "X", "YouTube", "Instagram"],
+    "appDownload": "Download the DAT One mobile app",
+    "reviewHeading": "Review Us",
+    "legalLinks": ["Marketing Index", "Site Map", "Legal", "Privacy Policy"],
+    "copyright": "Copyright © 2026 DAT Solutions, LLC. All rights reserved. All trademarks are the property of their respective owners."
+  }
+}
