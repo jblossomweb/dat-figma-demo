@@ -33,13 +33,13 @@ button.outline:hover {
   border: 1px solid var(--color-neutral-000);
 }
 
-button.borderless {
+button.ghost {
   background-color: transparent;
   color: var(--color-neutral-100);
   border: 1px solid transparent;
 }
 
-button.borderless:hover {
+button.ghost:hover {
   background-color: transparent;
   color: var(--color-neutral-000);
   border: 1px solid var(--color-neutral-000);

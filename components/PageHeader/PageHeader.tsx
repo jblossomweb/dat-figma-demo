@@ -11,26 +11,24 @@ import SearchIcon from '@/icons/SearchIcon';
 import CloseIcon from '@/icons/CloseIcon';
 import ExpandIcon from '@/icons/ExpandIcon';
 import MenuIcon from '@/icons/MenuIcon';
-
+  
 import Button from '@/components/Button';
 
 import styles from './PageHeader.module.css';
 
 export interface PageHeaderProps {
-  navLinks: Content['nav']['links'];
-  navActions: Content['nav']['actions'];
+  nav: Content['nav'];
 }
 
 const PageHeader: React.FC<PageHeaderProps> = ({
-  navLinks,
-  navActions,
+  nav,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navContent = (
     <>
       <ul className={styles.links}>
-        {navLinks.map((link) => (
+        {nav.links.map((link) => (
           <li key={link.label} className={styles.link}>
             <Link href={link.href}>
               <span className={link.current ? styles.current : undefined}>{link.label}</span>
@@ -45,7 +43,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
         </Link>
       </div>
       <div className={styles.actions}>
-        {navActions.map((action) => (
+        {nav.actions.map((action) => (
           <Button
             key={action.label}
             label={action.label}

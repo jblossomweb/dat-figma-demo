@@ -8,7 +8,7 @@ export interface ButtonProps {
   variant?:
     | 'primary'
     | 'outline'
-    | 'borderless'
+    | 'ghost'
     | 'gradient'
     | string;
 }

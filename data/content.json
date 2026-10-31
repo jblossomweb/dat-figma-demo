@@ -87,7 +87,7 @@
     "text": "Talk to our team about getting started with the industry standard in transportation analytics",
     "actions": [
       { "label": "Learn more", "href": "#", "variant": "ghost" },
-      { "label": "Request a demo", "href": "#", "variant": "primary" }
+      { "label": "Request a demo", "href": "#", "variant": "gradient" }
     ]
   },
   "footer": {
