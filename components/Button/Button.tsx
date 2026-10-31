@@ -5,7 +5,12 @@ import styles from './Button.module.css';
 export interface ButtonProps {
   label: string;
   href?: string;
-  variant?: 'primary' | 'outline' | string;
+  variant?:
+    | 'primary'
+    | 'outline'
+    | 'borderless'
+    | 'gradient'
+    | string;
 }
 
 const Button: React.FC<ButtonProps> = ({
