@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "./tokens.css";
+@import "./fonts.css";
+
+:root {
+  --background: var(--color-neutral-100);
+  --foreground: var(--color-neutral-1000);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Breakpoints owned as implementation constraints */
+  --breakpoint-tablet: 960px;
+  --breakpoint-mobile: 360px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-regular);
+}

@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Sequel Sans';
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+	src: url('/fonts/sequel-sans-roman-body-text.woff2') format('woff2'),
+		url('/fonts/Sequel_Demo.woff') format('woff'),
+		url('/fonts/sequel-sans-roman-body-text.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sequel Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url('/fonts/sequel-sans-bold-headline.woff2') format('woff2'),
+		url('/fonts/sequel-sans-bold-headline.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Sequel Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url('/fonts/sequel-sans-black-headline.woff2') format('woff2'),
+		url('/fonts/sequel-sans-black-headline.ttf') format('truetype');
+}
