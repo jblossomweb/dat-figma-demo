@@ -1,0 +1,149 @@
+.pageFooter {
+  --column-width: 128px;
+  --column-gap: 48px;
+
+  width: 100%;
+  height: 650px;
+  padding: 0 96px;
+  background-color: var(--color-neutral-1000);
+
+  color: var(--color-neutral-300);
+  font-size: var(--font-size-100);
+  font-weight: var(--font-weight-light);
+  font-family: 'Sequel Sans', sans-serif;
+
+  .link:hover {
+    color: var(--color-neutral-000);
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .divider {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-neutral-300);
+    margin: 12px 0;
+  }
+
+  .columnHeadings {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: var(--column-gap);
+
+    .heading {
+      width: var(--column-width);
+      text-align: center;
+      text-transform: uppercase;
+
+      font-size: var(--font-size-100);
+      line-height: var(--line-height-200);
+      font-weight: var(--font-weight-medium);
+      color: var(--color-neutral-000);
+    }
+  }
+
+  .columnLinks {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: var(--column-gap);
+
+    .linkList {
+      width: var(--column-width);
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 48px;
+
+    .link {
+      text-transform: uppercase;
+      color: var(--color-neutral-050);
+
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      button {
+        padding: 8px;
+
+        .icon {
+          width: 12px;
+          height: 12px;
+          color: var(--color-neutral-050);
+        }
+      }
+    }
+
+    .link:hover {
+      color: var(--color-neutral-000);
+      text-decoration: underline;
+
+      button {
+        background-color: var(--color-primary-500);
+
+        .icon {
+          color: var(--color-neutral-000);
+        }
+      }
+    }
+  }
+
+  .appDownload {
+    height: 120px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    .stores {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
+
+  .review {
+    height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    .sites {
+      display: flex;
+      flex-direction: row;
+      gap: 64px;
+    }
+  }
+
+  .legalLinks {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 36px;
+    gap: var(--column-gap);
+  }
+}
+
+@media (max-width: 959px) {
+  .pageFooter {
+    display: none;
+  }
+}
