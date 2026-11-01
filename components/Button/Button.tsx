@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './Button.module.css';
 
 export interface ButtonProps {
-  label: string;
+  label: string | React.ReactNode;
   href?: string;
   variant?:
     | 'primary'
@@ -17,10 +17,12 @@ const Button: React.FC<ButtonProps> = ({
   label,
   href,
   variant = 'primary',
-}) => (
-  <Link href={href ?? '#'}>
+}) => {
+  const button = (
     <button className={`${styles.button} ${styles[variant]}`}>{label}</button>
-  </Link>
-);
+  );
+
+  return href ? <Link href={href}>{button}</Link> : button;
+};
 
 export default Button;
