@@ -3,7 +3,7 @@
   --column-gap: 48px;
 
   width: 100%;
-  height: 650px;
+  height: var(--page-footer-height);
   padding: 0 96px;
   background-color: var(--color-neutral-1000);
 

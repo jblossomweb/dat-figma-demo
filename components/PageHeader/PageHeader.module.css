@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  height: 64px;
+  height: var(--page-header-height);
   background-color: var(--color-neutral-1000);
 
   display: flex;
@@ -191,7 +191,7 @@
 
 @media (min-width: 361px) and (max-width: 959px) {
   .pageHeader {
-    height: 76px;
+    height: var(--page-header-height);
     padding: 0 16px;
 
     .logo {
@@ -215,7 +215,7 @@
 
 @media (max-width: 360px) {
   .pageHeader {
-    height: 76px;
+    height: var(--page-header-height);
     padding: 0 16px;
 
     .logo {

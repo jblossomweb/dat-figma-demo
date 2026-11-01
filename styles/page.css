@@ -1,0 +1,37 @@
+:root {
+  /* layout vars owned as implementation constraints */
+  --page-header-height: 64px;
+  --page-footer-height: 650px;
+  --page-cta-height: 120px;
+
+  --page-frame-height: calc(
+    100vh
+    - var(--page-header-height)
+    - var(--page-cta-height)
+  );
+}
+
+@media (max-width: 959px) {
+  :root {
+    --page-header-height: 76px;
+    --page-footer-height: 0px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1439px) {
+  :root {
+    --page-cta-height: 136px;
+  }
+}
+
+@media (min-width: 441px) and (max-width: 959px) {
+  :root {
+    --page-cta-height: 176px;
+  }
+}
+
+@media (max-width: 440px) {
+  :root {
+    --page-cta-height: 236px;
+  }
+}
