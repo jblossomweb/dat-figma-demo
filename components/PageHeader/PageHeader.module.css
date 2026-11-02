@@ -31,7 +31,7 @@
 
         a {
           color: var(--color-neutral-300);
-          font-family: 'Sequel Sans';
+          font-family: var(--font-family-sans);
           font-weight: var(--font-weight-light);
           font-size: var(--font-size-400);
 
@@ -118,7 +118,7 @@
 
         a {
           color: var(--color-neutral-300);
-          font-family: 'Sequel Sans';
+          font-family: var(--font-family-sans);
           font-weight: var(--font-weight-light);
           font-size: var(--font-size-400);
 

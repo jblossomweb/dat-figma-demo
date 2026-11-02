@@ -8,7 +8,7 @@
   line-height: var(--font-size-300);
   font-size: var(--font-size-100);
   font-weight: var(--font-weight-medium);
-  font-family: 'Sequel Sans';
+  font-family: var(--font-family-sans);
   text-transform: uppercase;
   transition:
     background-color 0.3s ease,
@@ -47,8 +47,8 @@ button.ghost:hover {
 
 button.gradient {
   background:
-    linear-gradient(to right, var(--color-primary-500), #9900E0) padding-box,
-    linear-gradient(to right, var(--color-primary-500), #9900E0) border-box;
+    linear-gradient(to right, var(--color-primary-500), var(--color-tertiary-500)) padding-box,
+    linear-gradient(to right, var(--color-primary-500), var(--color-tertiary-500)) border-box;
   color: var(--color-neutral-100);
   border: 1px solid transparent;
 }
