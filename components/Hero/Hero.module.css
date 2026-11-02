@@ -26,14 +26,13 @@
     flex-shrink: 0;
 
     .content {
-      font-family: var(--font-family-sans);
-
       display: flex;
       flex-direction: column;
       gap: 24px;
       width: 624px;
 
       >.heading {
+        font-family: var(--font-family-sans);
         font-size: var(--font-size-700);
         line-height: var(--font-size-1000);
         font-weight: var(--font-weight-bold);
@@ -43,6 +42,7 @@
         font-size: var(--font-size-300);
         line-height: var(--font-size-500);
         font-weight: var(--font-weight-light);
+        letter-spacing: 0.75px;
       }
 
       .callout {
@@ -79,10 +79,13 @@
             flex: 1;
 
             .heading {
-              font-weight: var(--font-weight-medium);
+              font-weight: var(--font-weight-bold);
+              letter-spacing: 0.25px;
             }
+
             .text {
               font-weight: var(--font-weight-light);
+              letter-spacing: 0.2px;
             }
           }
         }
