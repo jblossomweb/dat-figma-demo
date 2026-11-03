@@ -4,7 +4,7 @@
 @import "./page.css";
 
 :root {
-  --background: var(--color-neutral-100);
+  --background: var(--color-neutral-000);
   --foreground: var(--color-neutral-1000);
 }
 
