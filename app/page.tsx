@@ -7,6 +7,7 @@ import PageFooter from '@/components/PageFooter';
 
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
+import Spotlights from '@/components/Spotlights';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <PageContent>
         <Hero hero={content.hero} />
         <Features features={content.features} />
+        <Spotlights spotlights={content.spotlights} />
       </PageContent>
       <PageFooter footer={content.footer} />
       <PageCta cta={content.cta} />
