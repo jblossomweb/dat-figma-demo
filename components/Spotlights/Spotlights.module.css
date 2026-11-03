@@ -1,0 +1,177 @@
+.spotlights {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .separator {
+    width: calc(100vw - 124px);
+    height: 1px;
+    background: var(--color-neutral-200);
+    margin: auto;
+  }
+
+  .spotlight {
+    width: 100%;
+    min-height: 701px;
+    padding: 120px 112px;
+    height: var(--page-frame-height);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 72px;
+
+    .copy {
+      width: 439px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      gap: 16px;
+
+      .title {
+        font-family: var(--font-family-sans);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-500);
+        line-height: calc(var(--font-size-500) + 4px);
+        letter-spacing: 0.25px;
+      }
+
+      .description {
+        font-weight: var(--font-weight-light);
+        font-size: var(--font-size-300);
+        line-height: calc(var(--font-size-400) + 2px);
+        letter-spacing: 0.5px;
+      }
+
+      .benefits {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-300);
+        line-height: calc(var(--font-size-400) + 2px);
+        letter-spacing: 0.5px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .benefit {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 8px;
+        }
+      }
+      
+    }
+
+    .screenshot {
+      width: 705px;
+      height: 461px;
+      border-radius: var(--radius-default);
+      background: url('/TruckStopBackground.png') no-repeat center center;
+      background-size: cover;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      image {
+        width: auto;
+        height: 340px;
+      }
+    }
+  }
+
+  .spotlight.left {
+    flex-direction: row;
+  }
+
+  .spotlight.right {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 1439px) {
+  .spotlights {
+    .separator {
+      display: none;
+    }
+
+    .separator:first-child,
+    div:last-child > .separator {
+      display: block;
+      width: calc(100vw - 96px);
+    }
+
+    .spotlight {
+      min-height: 496px;
+      padding: 88px 44px;
+
+      .copy {
+        max-width: 351px;
+
+        .title {
+          font-size: var(--font-size-300);
+          line-height: calc(var(--font-size-400) + 2px);
+        }
+
+        .description,
+        .benefits {
+          font-size: var(--font-size-200);
+          line-height: var(--font-size-400);
+        }
+      }
+
+      .screenshot {
+        width: 449px;
+        height: 320px;
+
+        padding: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 959px) {
+  .spotlights {
+    .separator {
+      display: block;
+      width: calc(100vw - 32px);
+    }
+
+    .spotlight {
+      min-height: 736px;
+    }
+
+    .spotlight.left,
+    .spotlight.right {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .spotlights {
+
+    .spotlight {
+      width: 100vw;
+      min-height: 586px;
+      padding: 48px 0;
+
+      .copy {
+        max-width: calc(100% - 48px);
+      }
+      .screenshot {
+        max-width: calc(100% - 48px);
+        height: 236px;
+      }
+    }
+  }
+}
