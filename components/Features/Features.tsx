@@ -25,6 +25,7 @@ const Features: React.FC<FeaturesProps> = ({
               alt={item.title}
               width={360}
               height={200}
+              loading="lazy"
             />
           </div>
           <h3 className={styles.title}>
