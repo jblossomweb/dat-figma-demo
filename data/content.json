@@ -52,6 +52,7 @@
         "Automated booking / negotiation tools",
         "Qualify Carriers Rapidly"
       ],
+      "image": "LoadBoardAndBeyond.png",
       "mediaPosition": "right"
     },
     {
@@ -62,6 +63,7 @@
         "Protect your margins",
         "Research new lanes"
       ],
+      "image": "MarketInsights.png",
       "mediaPosition": "left"
     }
   ],
