@@ -9,6 +9,7 @@
   font-size: var(--font-size-100);
   font-weight: var(--font-weight-medium);
   font-family: var(--font-family-sans);
+  letter-spacing: 0.75px;
   text-transform: uppercase;
   transition:
     background-color 0.3s ease,
