@@ -28,15 +28,18 @@
     "items": [
       {
         "title": "Move Freight",
-        "description": "Get access to the largest carrier network in North America, plus the tools to book, qualify and onboard in minutes."
+        "description": "Get access to the largest carrier network in North America, plus the tools to book, qualify and onboard in minutes.",
+        "image": "MoveFreight.png"
       },
       {
         "title": "Optimize Your Business",
-        "description": "Take the uncertainty out of freight with the deepest, broadest, and most reliable rate and capacity analytics."
+        "description": "Take the uncertainty out of freight with the deepest, broadest, and most reliable rate and capacity analytics.",
+        "image": "OptimizeYourBusiness.png"
       },
       {
         "title": "Get on the routing guide",
-        "description": "We provide the most accurate freight rate predictive models so that you can bid on freight with confidence and win business that boosts your bottom line."
+        "description": "We provide the most accurate freight rate predictive models so that you can bid on freight with confidence and win business that boosts your bottom line.",
+        "image": "GetOnTheRoutingGuide.png"
       }
     ]
   },
