@@ -61,6 +61,9 @@
 }
 
 .button.gradient:hover {
+  background:
+    linear-gradient(to right, var(--color-primary-400), var(--color-tertiary-400)) padding-box,
+    linear-gradient(to right, var(--color-primary-400), var(--color-tertiary-400)) border-box;
   color: var(--color-neutral-000);
   border: 1px solid var(--color-neutral-000);
 }
