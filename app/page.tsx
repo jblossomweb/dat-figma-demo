@@ -8,6 +8,7 @@ import PageFooter from '@/components/PageFooter';
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import Spotlights from '@/components/Spotlights';
+import AuthorityForm from '@/components/AuthorityForm';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero hero={content.hero} />
         <Features features={content.features} />
         <Spotlights spotlights={content.spotlights} />
+        <AuthorityForm authorityForm={content.authorityForm} />
       </PageContent>
       <PageFooter footer={content.footer} />
       <PageCta cta={content.cta} />
