@@ -1,4 +1,10 @@
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+
   background-color: var(--color-primary-600);
   color: var(--color-neutral-000);
   border: 1px solid var(--color-primary-600);
