@@ -27,7 +27,7 @@ const Spotlights: React.FC<SpotlightsProps> = ({
           <div className={styles.screenshot}>
             <Image
               src={`/${image}`}
-              alt={title}
+              alt=""
               width={620}
               height={340}
             />

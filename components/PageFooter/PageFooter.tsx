@@ -28,9 +28,9 @@ const PageFooter: React.FC<PageFooterProps> = ({ footer }) => (
   <footer className={styles.pageFooter}>
     <div className={styles.columnHeadings}>
       {footer.columns.map((column, index) => (
-        <h4 key={index} className={styles.heading}>
+        <h3 key={index} className={styles.heading}>
           {column.heading}
-        </h4>
+        </h3>
       ))}
     </div>
 

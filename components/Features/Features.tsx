@@ -22,7 +22,7 @@ const Features: React.FC<FeaturesProps> = ({
             <Image
               className={styles.image}
               src={`/${item.image}`}
-              alt={item.title}
+              alt=""
               width={360}
               height={200}
               loading="lazy"
