@@ -49,7 +49,7 @@ const AuthorityForm: React.FC<AuthorityFormProps> = ({
             />
           ))}
       </div>
-      <div className={styles.authorityNeeded}>
+      <fieldset className={styles.authorityNeeded}>
         <legend className={styles.legend}>{authorityForm.authorityNeeded.legend}</legend>
         <div className={styles.options}>
           {authorityForm.authorityNeeded.options.map((option) => (
@@ -66,7 +66,7 @@ const AuthorityForm: React.FC<AuthorityFormProps> = ({
             </label>
           ))}
         </div>
-      </div>
+      </fieldset>
       <div className={styles.consent}>
         {authorityForm.consent}
       </div>
