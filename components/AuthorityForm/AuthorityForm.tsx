@@ -74,6 +74,7 @@ const AuthorityForm: React.FC<AuthorityFormProps> = ({
         <Button
           type="submit"
           variant="primary"
+          className={styles.button}
           label={authorityForm.submitLabel}
         />
       </div>

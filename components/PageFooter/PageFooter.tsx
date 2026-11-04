@@ -58,6 +58,7 @@ const PageFooter: React.FC<PageFooterProps> = ({ footer }) => (
           <Link key={index} className={styles.link} href="#">
             <Button
               variant="outline"
+              className={styles.button}
               label={(
                 <Icon className={styles.icon} />
               )}

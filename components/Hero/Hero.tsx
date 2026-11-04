@@ -40,6 +40,7 @@ const Hero: React.FC<HeroProps> = ({
           <div className={styles.cta}>
             <Button
               variant="gradient"
+              className={styles.button}
               label={hero.callout.cta.label}
               href={hero.callout.cta.href}
             />

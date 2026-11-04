@@ -91,11 +91,11 @@
         }
 
         .cta {
-          button {
+          .button {
             color: var(--color-neutral-000);
           }
 
-          button:hover {
+          .button:hover {
             border-color: var(--color-primary-300);
           }
         }
@@ -191,7 +191,7 @@
             display: block;
           }
 
-          .cta button {
+          .cta .button {
             width: 100%;
           }
         }
