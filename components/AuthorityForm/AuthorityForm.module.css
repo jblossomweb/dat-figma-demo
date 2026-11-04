@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 32px;
+    scroll-margin-block-start: calc(var(--page-header-height) + 32px);
 
     font-weight: var(--font-weight-light);
 
