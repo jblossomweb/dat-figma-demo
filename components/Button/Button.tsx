@@ -5,6 +5,7 @@ import styles from './Button.module.css';
 export interface ButtonProps {
   label: string | React.ReactNode;
   href?: string;
+  type?: 'button' | 'submit' | 'reset';
   variant?:
     | 'primary'
     | 'outline'
@@ -17,9 +18,10 @@ const Button: React.FC<ButtonProps> = ({
   label,
   href,
   variant = 'primary',
+  type = 'button',
 }) => {
   const button = (
-    <button className={`${styles.button} ${styles[variant]}`}>{label}</button>
+    <button type={type} className={`${styles.button} ${styles[variant]}`}>{label}</button>
   );
 
   return href ? <Link href={href}>{button}</Link> : button;
