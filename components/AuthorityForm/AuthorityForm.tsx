@@ -23,6 +23,7 @@ const AuthorityForm: React.FC<AuthorityFormProps> = ({
             <select
               key={field.name}
               name={field.name}
+              aria-label={field.label}
               className={styles.field}
               required={field.required}
               defaultValue=""
@@ -41,6 +42,7 @@ const AuthorityForm: React.FC<AuthorityFormProps> = ({
               key={field.name}
               type={field.type}
               name={field.name}
+              aria-label={field.label}
               placeholder={`${field.label}${field.required ? '*' : ''}`}
               className={styles.field}
               required={field.required}
