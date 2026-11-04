@@ -1,0 +1,202 @@
+.authorityForm {
+  width: 100%;
+
+  padding: 48px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .form {
+    max-width: 576px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+
+    font-weight: var(--font-weight-light);
+
+    .heading {
+      font-family: var(--font-family-sans);
+      font-size: var(--font-size-600);
+      line-height: calc(var(--font-size-600) + 2px);
+      font-weight: var(--font-weight-medium);
+    }
+
+    .fields {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+
+      .field {
+        width: 276px;
+        height: 56px;
+        border: 1px solid var(--color-neutral-400);
+        border-radius: var(--radius-default);
+        flex: 0 0 calc(50% - 14px);
+        padding: 16px;
+
+        color: var(--color-neutral-500);
+        font-size: var(--font-size-300);
+        line-height: calc(var(--font-size-400) + 2px);
+        letter-spacing: 0.25px;
+      }
+
+      .field::placeholder {
+        color: var(--color-neutral-500);
+        font-size: var(--font-size-300);
+        line-height: calc(var(--font-size-400) + 2px);
+      }
+
+      select.field {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 16px center;
+        background-size: 16px;
+      }
+    }
+
+    .authorityNeeded {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .legend {
+        font-family: var(--font-family-sans);
+        font-size: var(--font-size-300);
+        line-height: calc(var(--font-size-400) + 2px);
+        font-weight: var(--font-weight-medium);
+      }
+
+      .options {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+
+        .option {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          cursor: pointer;
+          gap: 8px;
+
+          font-size: var(--font-size-200);
+          line-height: var(--font-size-400);
+          letter-spacing: 0.5px;
+
+          .checkbox {
+            width: var(--font-size-300);
+            height: var(--font-size-300);
+            box-sizing: border-box;
+            cursor: pointer;
+
+            border: 2px solid var(--color-neutral-500);
+            border-radius: var(--radius-default);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+
+            input {
+              appearance: none;
+            }
+
+            .checkmark {
+              width: var(--font-size-300);
+              height: var(--font-size-300);
+              transform: scale(1.9);
+              color: var(--color-neutral-000);
+              transition: opacity 0.3s ease, background-color 0.3s ease;
+              opacity: 0;
+            }
+          }
+
+          .checkbox:has(input:checked) {
+            background-color: var(--color-primary-500);
+
+            .checkmark {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .consent {
+      font-size: var(--font-size-200);
+      line-height: var(--font-size-400);
+      letter-spacing: 0.5px;
+    }
+
+    .submit {
+      width: 100%;
+
+      button {
+        width: 100%;
+      }
+
+      button:hover {
+        border-color: var(--color-primary-400);
+        background-color: var(--color-primary-400);
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .authorityForm {
+    .form {
+      .fields {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+
+        .field {
+          width: 312px;
+        }
+      }
+
+      .authorityNeeded {
+        width: 312px;
+
+        .options {
+          flex-direction: column;
+          gap: 16px;
+        }
+      }
+
+      .consent {
+        width: 312px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .authorityForm {
+    padding: 24px 16px;
+
+    .form {
+      .fields {
+        .field {
+          width: 100%;
+        }
+      }
+
+      .authorityNeeded {
+        width: 100%;
+      }
+
+      .consent {
+        width: 100%;
+      }
+    }
+  }
+}
+
