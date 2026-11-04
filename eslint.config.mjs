@@ -23,6 +23,21 @@ const eslintConfig = defineConfig([
       "@stylistic/comma-dangle": ["error", "always-multiline"],
       "@stylistic/semi": ["error", "always"],
       "@stylistic/eol-last": ["error", "always"],
+      "no-restricted-syntax": [
+        "error",
+        {
+          selector: "JSXElement[openingElement.name.name='Link'] JSXElement[openingElement.name.name='button']",
+          message: "Do not nest a button inside a Link; style the Link itself as a button.",
+        },
+        {
+          selector: "JSXElement[openingElement.name.name='Link'] > JSXExpressionContainer > Identifier[name='button']",
+          message: "Do not render a button inside a Link; style the Link itself as a button.",
+        },
+        {
+          selector: "JSXElement[openingElement.name.name='a'] JSXElement[openingElement.name.name='button']",
+          message: "Do not nest a button inside an anchor; use one interactive element.",
+        },
+      ],
     },
   },
 ]);
