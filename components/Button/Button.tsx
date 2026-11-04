@@ -7,6 +7,7 @@ export interface ButtonProps {
   href?: string;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   type?: 'button' | 'submit' | 'reset';
+  className?: string;
   variant?:
     | 'primary'
     | 'outline'
@@ -20,11 +21,23 @@ const Button: React.FC<ButtonProps> = ({
   href,
   variant = 'primary',
   type = 'button',
+  className,
   onClick,
 }) => href ? (
-  <Link href={href} className={`${styles.button} ${styles[variant]}`}>{label}</Link>
+  <Link
+    href={href}
+    className={`${styles.button} ${styles[variant]} ${className || ''}`}
+  >
+    {label}
+  </Link>
 ) : (
-  <button type={type} className={`${styles.button} ${styles[variant]}`} onClick={onClick}>{label}</button>
+  <button
+    type={type}
+    className={`${styles.button} ${styles[variant]} ${className || ''}`}
+    onClick={onClick}
+  >
+    {label}
+  </button>
 );
 
 export default Button;

@@ -76,7 +76,7 @@
       align-items: center;
       gap: 8px;
 
-      button {
+      .button {
         padding: 8px;
 
         .icon {
@@ -91,7 +91,7 @@
       color: var(--color-neutral-000);
       text-decoration: underline;
 
-      button {
+      .button {
         background-color: var(--color-primary-500);
 
         .icon {

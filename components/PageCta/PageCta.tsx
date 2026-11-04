@@ -22,6 +22,7 @@ const PageCta: React.FC<PageCtaProps> = ({ cta }) => (
             label={action.label}
             href={action.href}
             variant={action.variant}
+            className={styles.button}
           />
         ))}
       </div>
