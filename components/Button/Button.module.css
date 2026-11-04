@@ -22,31 +22,31 @@
   border: 1px solid var(--color-neutral-000);
 }
 
-button.outline {
+.button.outline {
   background-color: transparent;
   color: var(--color-neutral-100);
   border: 1px solid var(--color-neutral-100);
 }
 
-button.outline:hover {
+.button.outline:hover {
   background-color: transparent;
   color: var(--color-neutral-000);
   border: 1px solid var(--color-neutral-000);
 }
 
-button.ghost {
+.button.ghost {
   background-color: transparent;
   color: var(--color-neutral-100);
   border: 1px solid transparent;
 }
 
-button.ghost:hover {
+.button.ghost:hover {
   background-color: transparent;
   color: var(--color-neutral-000);
   border: 1px solid var(--color-neutral-000);
 }
 
-button.gradient {
+.button.gradient {
   background:
     linear-gradient(to right, var(--color-primary-500), var(--color-tertiary-500)) padding-box,
     linear-gradient(to right, var(--color-primary-500), var(--color-tertiary-500)) border-box;
@@ -54,7 +54,7 @@ button.gradient {
   border: 1px solid transparent;
 }
 
-button.gradient:hover {
+.button.gradient:hover {
   color: var(--color-neutral-000);
   border: 1px solid var(--color-neutral-000);
 }

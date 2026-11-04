@@ -5,6 +5,7 @@ import styles from './Button.module.css';
 export interface ButtonProps {
   label: string | React.ReactNode;
   href?: string;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
   type?: 'button' | 'submit' | 'reset';
   variant?:
     | 'primary'
@@ -19,12 +20,11 @@ const Button: React.FC<ButtonProps> = ({
   href,
   variant = 'primary',
   type = 'button',
-}) => {
-  const button = (
-    <button type={type} className={`${styles.button} ${styles[variant]}`}>{label}</button>
-  );
-
-  return href ? <Link href={href}>{button}</Link> : button;
-};
+  onClick,
+}) => href ? (
+  <Link href={href} className={`${styles.button} ${styles[variant]}`}>{label}</Link>
+) : (
+  <button type={type} className={`${styles.button} ${styles[variant]}`} onClick={onClick}>{label}</button>
+);
 
 export default Button;
