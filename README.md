@@ -1,5 +1,7 @@
 # John Blossom — Code Challenge Submission
 
+This is a demo project for DAT illustrating minimal tooling, desktop-first responsive design, and strict adherence to a Figma mockup (included in this repo).
+
 ## Prerequisites
 
 <!-- e.g. Node version, any global tools needed. Delete this section if none. -->
@@ -11,9 +13,43 @@
 <!-- Exact steps, in order, from a fresh clone to viewing the page in a
      browser. Assume the reader may not be technical. -->
 
+### clone this repository:
+
+```sh
+git clone git@github.com:jblossomweb/dat-figma-demo.git
+```
+
+### install dependencies:
+
+```sh
+npm install
+```
+
+### start development server:
+
+```sh
+npm run dev
+```
+
+### open a web browser to the local URL:
+
+http://localhost:3000/
+
+## How to run the linter
+
+```sh
+   npm run lint
+```
+
 ## How to run tests
 
-<!-- If applicable. Delete this section if there are no tests. -->
+(no test runner currently, but can add one if desired)
+
+## How to make a production build
+
+```sh
+   npm run build
+```
 
 # Next.js
 
